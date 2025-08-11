@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin-top: 60px;
+    text-align: center;
+    background: #EFEFF4;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px; /* espace horizontal entre colonnes */
+    margin-top: 30px;
+}
+
+.left-column, .center-column, .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.left-column {
+    align-items: flex-start;
+}
+
+.left-column button {
+    margin: 25px;
+    width: 140px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #ceab88;
+    box-shadow: 10px 5px 5px #ceab88;
+    border-radius: 4px;
+    background: #f9f9f9;
+
+}
+
+.center-column {
+    align-items: center;
+}
+
+.center-column button {
+    margin: 25px;
+    width: 180px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #55b1a9;
+    box-shadow: 10px 5px 5px #55b1a9;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+#show-answer-btn {
+    margin: 0px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#progress-container {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .progress-bar {
+    height: 100%;
+  }
+  
+  .progress-bar.known {
+    background-color: #55b1a9; /* Vert */
+  }
+  
+  .progress-bar.review {
+    background-color: #c13c29; /* Orange */
+  }
+
+
+#flashcard {
+    border: 2px solid black;
+    padding: 30px;
+    width: 350px;
+    height: 220px;
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    background: #f9f9f9;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+#display {
+    margin: 0;
+}
+
+#answer {
+    font-size: 20px;
+    color: gray;
+    min-height: 0px;
+    margin-top: 0px;
+}
+
+
+.right-column {
+    align-items: flex-start;
+}
+
+.right-column button {
+    margin: 25px;
+    width: 140px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #ceab88;
+    box-shadow: 10px 5px 5px #ceab88;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+#known-button {
+    border: 2px solid #55b1a9;
+    box-shadow: 10px 5px 5px #55b1a9;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+#review-button {
+    border: 2px solid #c13c29;
+    box-shadow: 10px 5px 5px #c13c29;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+  
+
+

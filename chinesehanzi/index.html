@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <h1>Chinese Flashcards</h1>
+    <div class="container">
+
+        <!-- Colonne gauche -->
+        <div class="left-column">
+            <button onclick="setMode('pinyin')">Show Pinyin</button>
+            <button onclick="setMode('hanzi')">Show Hanzi</button>
+        </div>
+
+        <!-- Colonne centrale -->
+        <div class="center-column">
+
+
+            <!-- Zone de la flashcard -->
+            <div id="flashcard">
+                <p id="display">Click a button to start</p>
+            </div>
+            <!-- Barre de progression -->
+            <div class="progress-container" style="width: 100%; background: #c13c29; height: 20px; border-radius: 10px; overflow: hidden;">
+                <div class="progress-bar known" style="background: #55b1a9; height: 100%; width: 0;"></div>
+                <div class="progress-bar review" style="background: #c13c29; height: 100%; width: 0;"></div>
+              </div>
+              <div id="progress"></div>
+
+            <!-- Bouton Show Answer -->
+            <button onclick="showAnswer()" id="show-answer-btn">Show Answer</button>
+             <!-- Réponse -->
+             <div id="answer"></div>
+        </div>
+
+        <!-- Colonne droite -->
+        <div class="right-column">
+            <button id="known-button" onclick="markKnown()">Known</button>
+            <button id="review-button" onclick="markToReview()">To review</button>
+        </div>
+
+    </div>
+</body>
+</html>
